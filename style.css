@@ -1,0 +1,179 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Hanken Grotesk;
+}
+body {
+  background-color: hsl(221, 100%, 96%);
+}
+
+/* this is the container that houses both box1 and box2 */
+.container {
+  background-color: white;
+  width: 630px;
+  margin: 200px auto;
+  display: flex;
+  border-radius: 30px;
+  box-shadow: 30px 20px 10px rgba(0, 0, 0, 0.053);
+}
+
+/* this is box1 the first box on the left  */
+.box1 {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 30px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: hsl(221, 100%, 96%);
+}
+
+/* this is box1 heading  */
+.box1-heading {
+  color: rgba(255, 255, 255, 0.699);
+  margin: 23px 0px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* this it the score */
+.score {
+  border-radius: 50%;
+  padding: 30px 50px;
+  margin: 0px 0px;
+
+  color: hsl(221, 100%, 96%);
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  h2 {
+    font-size: 60px;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.253);
+    font-weight: 900;
+    font-size: larger;
+  }
+}
+
+/* this is box1 score compliment */
+.compliment {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 30px;
+  font-weight: 1000;
+  font-weight: 500;
+  color: hsl(221, 100%, 96%);
+  margin: 15px 0px;
+}
+/* this is box1 paragraph */
+.box1-pgraph {
+  color: rgba(255, 255, 255, 0.699);
+  text-align: center;
+  font-size: medium;
+  line-height: 1.5;
+}
+
+
+
+/* this is box2  */
+.box2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 300px;
+  margin-left:10px ;
+
+  /* this is box2 second immidiate child div */
+  div:nth-child(2) {
+    background-color: hsla(0, 100%, 67%, 0.119);
+    div p {
+      color: hsl(0, 100%, 67%);
+      font-weight:bolder;
+    }
+    div + p {
+      color: #7a797957;
+      font-weight: 700;
+    }
+    div + p b {
+      color: rgba(0, 0, 0, 0.689);
+    }
+  }
+  /* this is box2 third immidiate child div */
+  div:nth-child(3) {
+    background-color: hsla(39, 100%, 56%, 0.162);
+    div p {
+      color: hsl(39, 100%, 56%);
+      font-weight:bolder;
+
+    }
+    div + p {
+      color: #7a797957;
+    }
+    div + p b {
+      color: rgba(0, 0, 0, 0.689);
+    }
+  }
+  /* this is box2 fourth immidiate child div */
+  div:nth-child(4) {
+    background-color: hsla(166, 100%, 37%, 0.107);
+    div p {
+      color: hsl(166, 100%, 37%);
+      font-weight:bolder;
+
+    }
+    div + p {
+      color: #7a797957;
+    }
+    div + p b {
+      color: rgba(0, 0, 0, 0.689);
+    }
+  }
+  /* this is box2 fifth immidiate child div */
+  div:nth-child(5) {
+    background-color: hsla(234, 85%, 45%, 0.128);
+    div p {
+      color: hsl(234, 85%, 45%);
+      font-weight:bolder;
+
+    }
+    div + p {
+      color: #7a797957;
+      font-weight: 1000;
+    }
+    div + p b {
+      color: rgba(0, 0, 0, 0.689);
+    }
+  }
+}
+.box2 div {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  border-radius: 20px;
+  margin: 5px;
+  div {
+    background-color: transparent;
+  }
+  p {
+    align-self: center;
+    padding: 0px 25px;
+  }
+}
+.box2 > h3 {
+  align-self: first baseline;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #7a7979;
+}
+
+.box2 > a {
+  background-color: hsl(224, 30%, 27%);
+  padding: 20px 97px;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  margin: 30px 0px;
+}
